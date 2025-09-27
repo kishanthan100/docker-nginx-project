@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Data Engineering {{app_name}}</title>
+  <style>
+    :root {
+      --bg: #ffffff;
+      --text: #333333;
+      --accent: #0073e6;
+      --card: #f9f9f9;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #121212;
+        --text: #e0e0e0;
+        --accent: #4dabf7;
+        --card: #1e1e1e;
+      }
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+    }
+
+    header {
+      background-color: var(--accent);
+      padding: 20px;
+      color: #fff;
+      text-align: center;
+    }
+
+    nav {
+      background: var(--card);
+      padding: 10px 20px;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      border-bottom: 1px solid #ccc;
+      flex-wrap: wrap;
+    }
+
+    nav a {
+      color: var(--accent);
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: auto;
+      padding: 20px;
+      background: var(--card);
+    }
+
+    section {
+      margin-bottom: 40px;
+    }
+
+    h1, h2 {
+      color: var(--accent);
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #222;
+      color: #ccc;
+      font-size: 0.9em;
+    }
+
+    .highlight {
+      background-color: #e7f3ff;
+      padding: 10px;
+      border-left: 4px solid var(--accent);
+      margin-top: 10px;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      .highlight {
+        background-color: #1a1f26;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Data Engineering</h1>
+    <p>Designing the Backbone of Modern Data Systems</p>
+  </header>
+
+  <nav>
+    <a href="#what">What is it?</a>
+    <a href="#responsibilities">Responsibilities</a>
+    <a href="#tools">Tools</a>
+    <a href="#etl">ETL vs ELT</a>
+    <a href="#azure">Azure Stack</a>
+    <a href="#career">Career</a>
+  </nav>
+
+  <div class="container">
+
+    <section id="what">
+      <h2>What is Data Engineering?</h2>
+      <p>
+        Data Engineering focuses on building and maintaining the systems that allow data to be collected, stored, and analyzed efficiently. It enables organizations to turn raw data into actionable insights by ensuring reliable data flow across systems.
+      </p>
+    </section>
+
+    <section id="responsibilities">
+      <h2>Core Responsibilities</h2>
+      <ul>
+        <li>Build scalable data pipelines (ETL/ELT)</li>
+        <li>Design and manage data lakes and warehouses</li>
+        <li>Ensure data quality, governance, and security</li>
+        <li>Automate data transformations and workflows</li>
+        <li>Support analytics, BI, and machine learning platforms</li>
+      </ul>
+    </section>
+
+    <section id="tools">
+      <h2>Popular Tools & Technologies</h2>
+      <ul>
+        <li><strong>Data Pipelines:</strong> Apache Airflow, dbt, Prefect</li>
+        <li><strong>Big Data:</strong> Apache Spark, Kafka, Flink</li>
+        <li><strong>Databases:</strong> Snowflake, PostgreSQL, Redshift, BigQuery</li>
+        <li><strong>Languages:</strong> Python, SQL, Scala</li>
+        <li><strong>Cloud Platforms:</strong> AWS, Azure, Google Cloud</li>
+      </ul>
+    </section>
+
+    <section id="etl">
+      <h2>ETL vs ELT</h2>
+      <p>
+        ETL and ELT are two data integration patterns used to move and transform data between systems.
+      </p>
+
+      <div class="highlight">
+        <strong>ETL (Extract, Transform, Load):</strong><br/>
+        Data is extracted, transformed (cleaned, enriched), and then loaded into the data warehouse. Traditionally used in on-prem systems.
+      </div>
+
+      <div class="highlight">
+        <strong>ELT (Extract, Load, Transform):</strong><br/>
+        Data is extracted and loaded into a cloud data warehouse, and transformation happens there. Preferred in modern cloud-first architectures (e.g. using BigQuery, Snowflake, Databricks).
+      </div>
+
+      <p>
+        ELT is more scalable and cost-efficient in cloud environments due to the power of distributed compute engines.
+      </p>
+    </section>
+
+    <section id="azure">
+      <h2>Azure Data Engineering Stack</h2>
+
+      <h3>🔷 Azure Databricks</h3>
+      <p>
+        A unified data analytics platform based on Apache Spark. It supports advanced analytics, machine learning, and real-time streaming workloads at scale.
+      </p>
+      <ul>
+        <li>Collaborative notebooks for data science and engineering</li>
+        <li>Auto-scaling clusters and performance tuning</li>
+        <li>Supports Delta Lake for ACID-compliant data lakes</li>
+      </ul>
+
+      <h3>🔷 Azure Data Factory</h3>
+      <p>
+        A serverless ETL/ELT tool for orchestrating and automating data pipelines. It can integrate data from 90+ sources and supports both code-free and code-based development.
+      </p>
+      <ul>
+        <li>Visual drag-and-drop pipeline design</li>
+        <li>Custom logic using Azure Functions or Databricks</li>
+        <li>Integration with GitHub, Azure DevOps, and CI/CD</li>
+      </ul>
+    </section>
+
+    <section id="career">
+      <h2>Career Path</h2>
+      <p>
+        As businesses become more data-driven, the demand for skilled data engineers continues to grow. Career paths include:
+      </p>
+      <ul>
+        <li>Junior / Mid-Level Data Engineer</li>
+        <li>Senior Data Engineer</li>
+        <li>Data Platform Engineer</li>
+        <li>Data Architect</li>
+        <li>Analytics / ML Engineer</li>
+      </ul>
+    </section>
+
+  </div>
+
+  <footer>
+    &copy; 2025 Data Engineering Hub — Built with ❤️ for learners and professionals
+  </footer>
+
+</body>
+</html>
