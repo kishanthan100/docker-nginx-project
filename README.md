@@ -6,7 +6,7 @@
 
 ## 🚀 Features
 
-- Flask application serving a basic HTTP responses
+- Flask application serving a basic HTTP responses!
 
 - Dockerized Flask services for easy deployment
 
