@@ -132,7 +132,7 @@ You should observe responses coming from different Flask instances, confirming t
 
 ``Flask – Backend web framework``
 
-``Docker – Containerization``
+ ``Docker – Containerization``
 
 ``Docker Compose – Multi-container orchestration``
 
