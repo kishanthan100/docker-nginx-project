@@ -114,7 +114,6 @@ http {
 
   ``http://127.0.0.1``
 
-
 - Requests will be load balanced across the Flask replicas.
 
  ## 🧪 Testing Load Balancing
